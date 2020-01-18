@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("button").click(function() {
-        let i = 0;
+        let i = 1;
         return function () {
             console.log(i);
             $.get("https://api.github.com/repos/MLuebbers/pensive/commits?path=./index.html", function(data, status) {
@@ -16,7 +16,7 @@ $(document).ready(function() {
                 
                         success: function(response) {
                             console.log(response);
-                            $(`.frame:nth-of-type(${i+1})`).append(response);
+                            $(`.frame:nth-of-type(${i})`).append(response);
                             i ++;
                         }
                     });
