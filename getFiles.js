@@ -1,5 +1,5 @@
 let buttonClick = function() {
-    let i = 1;
+    let i = 0;
     return function () {
         console.log(i);
         $.get("https://api.github.com/repos/MLuebbers/pensieve/commits?path=./frame.html", function(data, status) {
