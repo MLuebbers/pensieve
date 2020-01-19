@@ -64,7 +64,8 @@ body {
 
 .frame {
     border: 1px solid black;
-    padding: 10%;
+    padding: 4pt;
+    overflow: hidden;
 }
 
 .container p {
