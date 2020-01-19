@@ -1,3 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#frame-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    color: white;
+    background-color: black;
+}
+header {
+    padding: 4pt;
+}
+header * {
+    margin: 0 4pt;
+}
+header #commits {
+}
+header #last-commit {
+
+}
+header #github-link {
+    color: yellow;
+    
+}
+header #github-link:visited {
+    color: yellow;
+}
+header #github-link:hover {
+    background-color: yellow;
+    color: black;
+}
+
+button { 
+    border: 1px solid black;
+    background-color: white;
+    padding: 4pt;
+    margin-bottom: 4pt;
+
+}
+button:hover { 
+    border: 1px solid black;
+    background-color: yellow;
+}
+button:focus { 
+    border: 1px solid black;
+    background-color:  black;
+    color: white
+}
+body {
+    margin: 10%;
+}
+
 .frame {
     border: 1px solid black;
+    padding: 10%;
 }
