@@ -2,7 +2,7 @@ let buttonClick = function() {
     let i = 1;
     return function () {
         console.log(i);
-        $.get("https://api.github.com/repos/MLuebbers/pensive/commits?path=./index.html", function(data, status) {
+        $.get("https://api.github.com/repos/MLuebbers/pensieve/commits?path=./index.html", function(data, status) {
             console.log(data);
             if(i < data.length) {
                 $.ajax({
@@ -11,7 +11,7 @@ let buttonClick = function() {
                     },
                     data: "data",
                     method: "GET",
-                    url: `https://api.github.com/repos/MLuebbers/pensive/contents/index.html?ref=${data[i].sha}`,
+                    url: `https://api.github.com/repos/MLuebbers/pensieve/contents/index.html?ref=${data[i].sha}`,
             
                     success: function(response) {
                         console.log(response);
