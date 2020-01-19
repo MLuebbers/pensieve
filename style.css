@@ -66,3 +66,7 @@ body {
     border: 1px solid black;
     padding: 10%;
 }
+
+.container p {
+    margin: 16pt 0;
+}
