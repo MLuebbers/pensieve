@@ -5,16 +5,14 @@
         <title>Pensive</title>
         <link rel="stylesheet" href="./style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./getFiles.js"></script>
+        <script src="./getCommits.js"></script>
     </head>
     <body>
-        <button class="button" onclick="buttonClick()">skdjfs</button>
-        <h1>The Pensive</h1>
-        <p>
-            Click the button to go deeper...
-        </p>
-        <div class="frame">
-
-        </div>
+        <iframe id="frame-container" src="./frame.html"></iframe>
+        <header>
+            <a id="github-link" href="https://github.com/MLuebbers/pensive">https://github.com/MLuebbers/pensive</a>
+            <span id="last-commit"></span>
+            <span id="commits"></span>    
+        </header>
     </body>
 </html>
